@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@custom/custom-1": ["libs/custom/custom-1/src/index.ts"],
+      "@custom/custom-2": ["libs/custom/custom-2/src/index.ts"],
+      "@shared/ui": ["libs/shared/ui/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
