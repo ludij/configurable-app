@@ -1,0 +1,9 @@
+{
+  "executors": {
+    "dynamic-binds": {
+      "implementation": "./src/lib/dynamic-binds/dynamic-binds",
+      "schema": "./src/lib/dynamic-binds/schema.json",
+      "description": "dynamic-binds executor"
+    }
+  }
+}

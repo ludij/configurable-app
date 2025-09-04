@@ -17,6 +17,7 @@
     "paths": {
       "@custom/custom-1": ["libs/custom/custom-1/src/index.ts"],
       "@custom/custom-2": ["libs/custom/custom-2/src/index.ts"],
+      "@monorepo-test/plugins": ["plugins/src/index.ts"],
       "@shared/ui": ["libs/shared/ui/src/index.ts"]
     }
   },
