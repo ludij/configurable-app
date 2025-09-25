@@ -1,5 +1,8 @@
 # See https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
 
+# nx plugin generated files
+libs/alias-resolver/src/*
+
 # compiled output
 dist
 tmp

@@ -1,0 +1,5 @@
+{
+  "BannerElement": "@custom/custom-1/elements",
+  "ButtonComponent": "@custom/custom-1/components",
+  "CardComponent": "@custom/custom-1/components"
+}

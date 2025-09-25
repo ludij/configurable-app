@@ -5,6 +5,12 @@
   "projectType": "library",
   "tags": [],
   "targets": {
+    "configure": {
+      "executor": "@plugins:config-handler",
+      "options": {
+        "config": "default-config"
+      }
+    },
     "build": {
       "executor": "@nx/js:tsc",
       "outputs": ["{options.outputPath}"],

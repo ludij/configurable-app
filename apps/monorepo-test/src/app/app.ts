@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { BannerElement } from '@elements';
+import { ButtonComponent, CardComponent } from '@components';
 
 @Component({
-  imports: [RouterModule],
+  imports: [RouterModule, BannerElement, ButtonComponent, CardComponent],
   selector: 'app-root',
   templateUrl: './app.html',
   styleUrl: './app.scss',

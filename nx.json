@@ -51,6 +51,12 @@
   },
   "plugins": [
     {
+      "plugin": "@plugins",
+      "options": {
+        "tsConfigPath": "plugins/tsconfig.json"
+      }
+    },
+    {
       "plugin": "@nx/playwright/plugin",
       "options": {
         "targetName": "e2e"

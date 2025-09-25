@@ -1,0 +1,5 @@
+{
+  "BannerElement": "@shared/ui/elements",
+  "ButtonComponent": "@custom/custom-2/components",
+  "CardComponent": "@custom/custom-1/components"
+}
