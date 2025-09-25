@@ -17,22 +17,24 @@ Please note that this is a work in progress and only for demonstration purposes 
 ├── libs/
 │   ├── shared/
 │   │   └── ui                # Default (fallback) elements/components
-│   ├── custom/
-│   │   ├── custom-1          # Custom elements/components variants 1 (overrides)
-│   │   └── custom-2          # Custom elements/components variants 2 (overrides)
-│   └── alias-resolver        # Generated export layer to resolve elements/components aliases
+│   └── custom/
+│       ├── custom-1          # Custom elements/components variants 1 (overrides)
+│       └── custom-2          # Custom elements/components variants 2 (overrides)
 │
 ├── configs/                  # Configuration folders defining which elements/components to use
 │
-└── plugins/
-    └── config-handler        # Nx executor that manages the alias-resolver lib based on config
+├── plugins/
+│   └── config-handler        # Nx executor that manages the alias-resolver tool based on config
+│
+└── tools/
+    └── alias-resolver        # Generated export layer to resolve elements/components aliases
 ```
 
 ## How It Works
 
-The app (`configurable-app`), elements and components always imports elements and components via stable aliases `@elements` and `@components`. These aliases point to the `alias-resolver` library, which exports the actual element and component implementations from other libraries.
+The app (`configurable-app`), elements and components always imports elements and components via stable aliases `@elements` and `@components`. These aliases point to the `alias-resolver` tool, which exports the actual element and component implementations from libraries.
 
-When running the `config-handler` plugin, it reads a config file and updates the `alias-resolver` to point to the elements and components accordingly.
+When running the `config-handler` plugin, it reads a config file and updates the `alias-resolver` tool to resolve to the elements and components accordingly.
 
 ## Run tasks
 

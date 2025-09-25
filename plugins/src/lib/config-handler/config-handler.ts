@@ -21,8 +21,8 @@ const runExecutor: PromiseExecutor<ConfigHandlerExecutorOptions> = async (
 
   const configJson: AppConfig = JSON.parse(readFileSync(configPath, 'utf-8'));
 
-  const componentExportsPath = join(context.root, 'libs', 'alias-resolver', 'src', 'components.ts');
-  const elementExportsPath = join(context.root, 'libs', 'alias-resolver', 'src', 'elements.ts');
+  const componentExportsPath = join(context.root, 'tools', 'alias-resolver', 'components.ts');
+  const elementExportsPath = join(context.root, 'tools', 'alias-resolver', 'elements.ts');
 
   const componentExports: string[] = [];
   const elementExports: string[] = [];
