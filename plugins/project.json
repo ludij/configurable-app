@@ -11,16 +11,6 @@
         "config": "default-config"
       }
     },
-    "build": {
-      "executor": "@nx/js:tsc",
-      "outputs": ["{options.outputPath}"],
-      "options": {
-        "outputPath": "dist/plugins",
-        "main": "plugins/src/index.ts",
-        "tsConfig": "plugins/tsconfig.lib.json",
-        "assets": ["plugins/*.md"]
-      }
-    },
     "test": {
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],

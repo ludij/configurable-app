@@ -9,6 +9,4 @@ import { ButtonComponent, CardComponent } from '@components';
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })
-export class App {
-  protected title = 'configurable-app';
-}
+export class App { }
