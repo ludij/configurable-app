@@ -11,8 +11,8 @@ Please note that this is a work in progress and only for demonstration purposes 
 ```
 .
 ├── apps/
-│   ├── monorepo-test         # Main Angular app
-│   └── monorepo-test-e2e     # End-to-end testing app
+│   ├── configurable-app         # Main Angular app
+│   └── configurable-app-e2e     # End-to-end testing app
 │
 ├── libs/
 │   ├── shared/
@@ -30,7 +30,7 @@ Please note that this is a work in progress and only for demonstration purposes 
 
 ## How It Works
 
-The app (`monorepo-test`), elements and components always imports elements and components via stable aliases `@elements` and `@components`. These aliases point to the `alias-resolver` library, which exports the actual element and component implementations from other libraries.
+The app (`configurable-app`), elements and components always imports elements and components via stable aliases `@elements` and `@components`. These aliases point to the `alias-resolver` library, which exports the actual element and component implementations from other libraries.
 
 When running the `config-handler` plugin, it reads a config file and updates the `alias-resolver` to point to the elements and components accordingly.
 
@@ -39,13 +39,13 @@ When running the `config-handler` plugin, it reads a config file and updates the
 To run the dev server for your app, use:
 
 ```sh
-npx nx monorepo-test:serve
+npx nx configurable-app:serve
 ```
 
 To change the configuration first, and then serve:
 
 ```sh
-npx nx monorepo-test:serve --config=your-config-folder
+npx nx configurable-app:serve --config=your-config-folder
 ```
 
 To change the configuration only:
@@ -57,13 +57,13 @@ npx nx plugins:configure --config=your-config-folder
 To create a production bundle:
 
 ```sh
-npx nx monorepo-test:build
+npx nx configurable-app:build
 ```
 
 To see all available targets to run for a project, run:
 
 ```sh
-npx nx show project monorepo-test
+npx nx show project configurable-app
 ```
 
 These targets are either [inferred automatically](https://nx.dev/concepts/inferred-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) or defined in the `project.json` or `package.json` files.

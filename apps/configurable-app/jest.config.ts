@@ -1,8 +1,8 @@
 export default {
-  displayName: 'monorepo-test',
+  displayName: 'configurable-app',
   preset: '../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory: '../../coverage/apps/monorepo-test',
+  coverageDirectory: '../../coverage/apps/configurable-app',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',

@@ -10,5 +10,5 @@ import { ButtonComponent, CardComponent } from '@components';
   styleUrl: './app.scss',
 })
 export class App {
-  protected title = 'monorepo-test';
+  protected title = 'configurable-app';
 }

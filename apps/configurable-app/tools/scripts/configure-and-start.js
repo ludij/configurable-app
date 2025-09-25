@@ -17,24 +17,24 @@ args.forEach((arg) => {
 
 if (config) {
   try {
-    console.log(`▶️ Running plugin:configure with: ${config}`);
+    console.log(`▶️ Running plugins:configure with: ${config}`);
     execSync(`nx run plugins:configure --config=${config}`, {
       stdio: 'inherit',
     });
   } catch (err) {
-    console.error('❌ Error running configure target for NX:', err);
+    console.error('❌ Error running plugins:configure for NX:', err);
     process.exit(1);
   }
 }
 
 try {
   const serveCommand = configuration
-    ? `nx run monorepo-test:start:${configuration}`
-    : `nx run monorepo-test:start`;
-  console.log(`▶️ Starting serve${configuration ? `:${configuration}` : ''}`);
+    ? `nx run configurable-app:start:${configuration}`
+    : `nx run configurable-app:start`;
+  console.log(`▶️ Running start${configuration ? `:${configuration}` : ''}`);
   execSync(serveCommand, { stdio: 'inherit' });
   console.log('✅ Done');
 } catch (err) {
-  console.error('❌ Error running start target for NX:', err);
+  console.error('❌ Error running configurable-app:start for NX:', err);
   process.exit(1);
 }

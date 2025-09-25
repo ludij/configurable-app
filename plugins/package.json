@@ -1,5 +1,5 @@
 {
-  "name": "@monorepo-test/plugins",
+  "name": "@configurable-app/plugins",
   "version": "0.0.1",
   "private": true,
   "type": "module",
