@@ -17,11 +17,11 @@
     "paths": {
       "@alias-resolver": ["libs/alias-resolver/src/index.ts"],
       "@components": ["libs/alias-resolver/src/components.ts"],
-      "@elements": ["libs/alias-resolver/src/elements.ts"],
       "@custom/custom-1/components": ["libs/custom/custom-1/src/components.ts"],
       "@custom/custom-1/elements": ["libs/custom/custom-1/src/elements.ts"],
       "@custom/custom-2/components": ["libs/custom/custom-2/src/components.ts"],
       "@custom/custom-2/elements": ["libs/custom/custom-2/src/elements.ts"],
+      "@elements": ["libs/alias-resolver/src/elements.ts"],
       "@plugins": ["plugins/src/index.ts"],
       "@shared/ui/components": ["libs/shared/ui/src/components.ts"],
       "@shared/ui/elements": ["libs/shared/ui/src/elements.ts"]

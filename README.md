@@ -39,25 +39,25 @@ When running the `config-handler` plugin, it reads a config file and updates the
 To run the dev server for your app, use:
 
 ```sh
-npx nx configurable-app:serve
+npx nx run configurable-app:serve
 ```
 
 To change the configuration first, and then serve:
 
 ```sh
-npx nx configurable-app:serve --config=your-config-folder
+npx nx run configurable-app:serve --config=your-config-folder
 ```
 
 To change the configuration only:
 
 ```sh
-npx nx plugins:configure --config=your-config-folder
+npx nx run plugins:configure --config=your-config-folder
 ```
 
 To create a production bundle:
 
 ```sh
-npx nx configurable-app:build
+npx nx run configurable-app:build
 ```
 
 To see all available targets to run for a project, run:
