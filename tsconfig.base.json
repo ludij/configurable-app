@@ -21,9 +21,9 @@
       "@custom/custom-2/components": ["libs/custom/custom-2/src/components.ts"],
       "@custom/custom-2/elements": ["libs/custom/custom-2/src/elements.ts"],
       "@elements": ["tools/alias-resolver/elements.ts"],
-      "@plugins": ["plugins/src/index.ts"],
       "@shared/ui/components": ["libs/shared/ui/src/components.ts"],
-      "@shared/ui/elements": ["libs/shared/ui/src/elements.ts"]
+      "@shared/ui/elements": ["libs/shared/ui/src/elements.ts"],
+      "@tools/config-handler": ["tools/config-handler/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

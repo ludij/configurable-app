@@ -1,0 +1,54 @@
+{
+  "name": "config-handler",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "tools/config-handler/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "configure": {
+      "executor": "@tools/config-handler:configure",
+      "options": {
+        "config": "default-config"
+      }
+    },
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/tools/config-handler",
+        "main": "tools/config-handler/src/index.ts",
+        "tsConfig": "tools/config-handler/tsconfig.lib.json",
+        "assets": [
+          "tools/config-handler/*.md",
+          {
+            "input": "./tools/config-handler/src",
+            "glob": "**/!(*.ts)",
+            "output": "./src"
+          },
+          {
+            "input": "./tools/config-handler/src",
+            "glob": "**/*.d.ts",
+            "output": "./src"
+          },
+          {
+            "input": "./tools/config-handler",
+            "glob": "generators.json",
+            "output": "."
+          },
+          {
+            "input": "./tools/config-handler",
+            "glob": "executors.json",
+            "output": "."
+          }
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "tools/config-handler/jest.config.ts"
+      }
+    }
+  }
+}

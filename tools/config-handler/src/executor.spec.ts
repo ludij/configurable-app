@@ -1,7 +1,7 @@
 import { ExecutorContext } from '@nx/devkit';
 
 import { ConfigHandlerExecutorOptions } from './schema';
-import runExecutor from './config-handler';
+import configHandlerExecutor from './executor';
 
 const options: ConfigHandlerExecutorOptions = {
   config: 'default-config',
@@ -24,7 +24,7 @@ const context: ExecutorContext = {
 
 describe('ConfigHandler Executor', () => {
   it('can run', async () => {
-    const output = await runExecutor(options, context);
+    const output = await configHandlerExecutor(options, context);
     expect(output.success).toBe(true);
   });
 });

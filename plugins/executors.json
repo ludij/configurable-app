@@ -1,9 +1,0 @@
-{
-  "executors": {
-    "config-handler": {
-      "implementation": "./src/lib/config-handler/config-handler",
-      "schema": "./src/lib/config-handler/schema.json",
-      "description": "Creates exports for components and elements in alias-resolver lib based on provided configuration"
-    }
-  }
-}

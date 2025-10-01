@@ -1,4 +1,4 @@
-import baseConfig from '../eslint.config.mjs';
+import baseConfig from '../../eslint.config.mjs';
 
 export default [
   ...baseConfig,
@@ -17,7 +17,7 @@ export default [
     },
   },
   {
-    files: ['**/package.json', '**/executors.json'],
+    files: ['**/package.json', '**/package.json', '**/executors.json'],
     rules: {
       '@nx/nx-plugin-checks': 'error',
     },

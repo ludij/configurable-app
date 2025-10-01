@@ -17,12 +17,12 @@ args.forEach((arg) => {
 
 if (config) {
   try {
-    console.log(`▶️ Running plugins:configure with: ${config}`);
-    execSync(`nx run plugins:configure --config=${config}`, {
+    console.log(`▶️ Running config-handler:configure with: ${config}`);
+    execSync(`nx run config-handler:configure --config=${config}`, {
       stdio: 'inherit',
     });
   } catch (err) {
-    console.error('❌ Error running plugins:configure for NX:', err);
+    console.error('❌ Error running config-handler:configure for NX:', err);
     process.exit(1);
   }
 }

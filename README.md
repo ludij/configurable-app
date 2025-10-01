@@ -23,10 +23,8 @@ Please note that this is a work in progress and only for demonstration purposes 
 │
 ├── configs/                  # Configuration folders defining which elements/components to use
 │
-├── plugins/
-│   └── config-handler        # Nx executor that manages the alias-resolver tool based on config
-│
 └── tools/
+    ├── config-handler        # NX executor that manages alias-resolver tool based on config
     └── alias-resolver        # Generated export layer to resolve elements/components aliases
 ```
 
@@ -53,7 +51,7 @@ npx nx run configurable-app:serve --config=your-config-folder
 To change the configuration only:
 
 ```sh
-npx nx run plugins:configure --config=your-config-folder
+npx nx run configure-handler:configure --config=your-config-folder
 ```
 
 To create a production bundle:

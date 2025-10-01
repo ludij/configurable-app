@@ -3,7 +3,7 @@ import { AppConfig, ConfigHandlerExecutorOptions as ConfigHandlerExecutorOptions
 import { dirname, join } from 'path';
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'fs';
 
-const runExecutor: PromiseExecutor<ConfigHandlerExecutorOptions> = async (
+const configHandlerExecutor: PromiseExecutor<ConfigHandlerExecutorOptions> = async (
   options: ConfigHandlerExecutorOptions,
   context: ExecutorContext,
 ): Promise<{ success: boolean }> => {
@@ -57,4 +57,4 @@ const runExecutor: PromiseExecutor<ConfigHandlerExecutorOptions> = async (
 
 };
 
-export default runExecutor;
+export default configHandlerExecutor;
